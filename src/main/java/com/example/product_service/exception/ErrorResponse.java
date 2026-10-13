@@ -1,0 +1,18 @@
+package com.example.product_service.exception;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ErrorResponse {
+    private String message ;
+    private List<String> systemMessage ;
+    private int code ;
+}
